@@ -1,0 +1,41 @@
+/* privacy.css */
+
+.privacy-container {
+  padding: 30px; /* Padding inside the container */
+  margin: 150px auto; /* Center the container with margins on top and bottom */
+  max-width: 800px; /* Set a maximum width for better readability */
+  background-color: #1f1f1f; /* Dark background for contrast */
+  border-radius: 8px; /* Rounded corners for a smoother appearance */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  color: #fff; /* Light text for contrast */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  line-height: 1.6; /* Improve readability */
+}
+
+.privacy-title {
+  font-size: 2.5em; /* Larger title */
+  margin-bottom: 20px;
+  color: #ee4c7c; /* Pink color for titles */
+  text-align: center; /* Center the title */
+}
+
+h2 {
+  font-size: 1.8em; /* Larger subsection titles */
+  margin-top: 30px; /* Increased space above subsections */
+  color: #ee4c7c; /* Pink color for subsection titles */
+  border-bottom: 2px solid #ee4c7c; /* Underline effect for subsection titles */
+  padding-bottom: 10px; /* Padding below the title for better spacing */
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1.1em; /* Slightly larger text for better readability */
+  padding: 5px; /* Padding inside paragraph for better touch */
+}
+
+.privacy-footer {
+  margin-top: 40px;
+  font-style: italic;
+  text-align: center; /* Center the footer */
+  color: #ccc; /* Slightly lighter color for footer */
+}
