@@ -10,7 +10,7 @@ const Collaboration = () => {
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">
-            UGC Gaming Content NEvolution
+            UGC Gaming Content NEvolution32
           </h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
