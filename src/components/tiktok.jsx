@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Container, Typography, Card, CardContent, Snackbar } from '@mui/material';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
 import Navbar from './Navbar';
 
 const PostToTikTok = () => {
@@ -7,6 +8,8 @@ const PostToTikTok = () => {
   const [selectedVideoId, setSelectedVideoId] = useState(null);
   const [loading, setLoading] = useState(false);
   const [toastOpen, setToastOpen] = useState(false);
+  const [congratsOpen, setCongratsOpen] = useState(false); // State for congratulatory message
+  const navigate = useNavigate(); // Use navigate for programmatic navigation
 
   // Fetch video data from JSON file
   useEffect(() => {
@@ -30,9 +33,15 @@ const PostToTikTok = () => {
     // Simulate posting process
     setTimeout(() => {
       setLoading(false);
-      // Reset selection after posting
-      setSelectedVideoId(null);
-    }, 2000); // Simulate a 2-second delay
+      setToastOpen(false); // Close the snackbar
+      navigate('/confirmation'); // Navigate to confirmation page
+
+      // After 10 seconds, navigate back to the original path
+      setTimeout(() => {
+        navigate('/');
+        setCongratsOpen(true); // Open congratulatory message
+      }, 10000);
+    }, 4000); // Simulate a 4-second delay before posting
   };
 
   return (
@@ -104,8 +113,15 @@ const PostToTikTok = () => {
         <Snackbar
           open={toastOpen}
           onClose={() => setToastOpen(false)}
-          message="Posting your video On Your Tiktok..."
+          message="Posting your video On Your TikTok..."
           autoHideDuration={2000}
+        />
+
+        <Snackbar
+          open={congratsOpen}
+          onClose={() => setCongratsOpen(false)}
+          message="Congratulations! Your post is under review. Please wait some time."
+          autoHideDuration={6000}
         />
       </Container>
     </>

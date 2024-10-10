@@ -73,12 +73,17 @@ const Header = () => {
         >
           Privacy Policy
         </Link>
-        <Link to={`/termes`}><Button className="hidden lg:flex" href="#login">
-        <a
+        <Link to={`/termes`}
           href="#signup"
-          
+          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
         >
           Termes
+        </Link>
+        <Link to={`/auth`}><Button className="hidden lg:flex" href="#login">
+        <a
+          href="#signup"
+        >
+          Login
         </a>
         </Button></Link>
 
