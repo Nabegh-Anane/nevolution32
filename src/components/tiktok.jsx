@@ -104,7 +104,7 @@ const PostToTikTok = () => {
         <Snackbar
           open={toastOpen}
           onClose={() => setToastOpen(false)}
-          message="Posting your video..."
+          message="Posting your video On Your Tiktok..."
           autoHideDuration={2000}
         />
       </Container>
