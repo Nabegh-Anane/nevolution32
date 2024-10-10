@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Privacy from './components/termesprivacy/privacy.jsx';
 import Termes from './components/termesprivacy/termes.jsx';
 import App from "./App.jsx";
+import PostToTikTok from './components/tiktok.jsx';
 import "./index.css";
 
 // Renamed to avoid conflict with the default "App"
@@ -15,6 +16,7 @@ const MainApp = () => {
           <Route path="/" element={<App />} />
           <Route path="/termes" element={<Termes />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/tiktokpost" element={<PostToTikTok />} />
         </Routes>
       </Router>
     </React.StrictMode>

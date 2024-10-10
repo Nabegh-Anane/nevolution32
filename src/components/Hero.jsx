@@ -38,8 +38,8 @@ const Hero = () => {
         <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
           NEvolution32 offers dynamic UGC gaming content, from streams to the latest news, bringing fresh insights and engaging the community across platforms.
         </p>
-        <Button href="/pricing" white>
-          View Content
+        <Button href="/tiktokpost" white>
+          Post Content
         </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
