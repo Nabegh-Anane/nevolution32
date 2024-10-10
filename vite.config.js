@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
@@ -10,14 +10,19 @@ export default defineConfig({
   },
   css: {
     modules: {
-      localsConvention: 'camelCase'
-    }
+      localsConvention: 'camelCase',
+    },
   },
   build: {
     outDir: 'dist',
     rollupOptions: {
-      external: ['@mui/material'],
+      external: ['@mui/material'], // Assuming you want to exclude MUI from the build
+      output: {
+        // This is optional; specify this only if you need to customize output options
+        globals: {
+          '@mui/material': 'mui', // Adjust the global name if necessary
+        },
+      },
     },
-  }
+  },
 });
-
