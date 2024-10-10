@@ -36,7 +36,7 @@ const TikTokAuth = () => {
             },
           }}
         >
-          Authorize Now
+          Authorize Now With Your TikTok
         </Button>
       </a>
     </Container>
