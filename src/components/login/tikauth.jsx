@@ -20,7 +20,7 @@ const TikTokAuth = () => {
       <Typography variant="body1" style={{ marginBottom: '2rem' }}>
         Please authorize our application to access your TikTok account.
       </Typography>
-      <a href="https://www.tiktok.com/auth" style={{ textDecoration: 'none' }}>
+      <a href="https://nevolution32-backend.vercel.app/api/auth" style={{ textDecoration: 'none' }}>
         <Button 
           variant="contained" 
           style={{
